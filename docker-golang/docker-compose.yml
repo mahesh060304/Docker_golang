@@ -4,5 +4,11 @@ services:
     container_name: mongo
     image: mongo:4.4
     ports:
-      - 27017:27017
+      - "27017:27017"
     command: mongod
+  
+  redis:
+    container_name: redis
+    image: redis:latest
+    ports:
+      - "6379:6379"
