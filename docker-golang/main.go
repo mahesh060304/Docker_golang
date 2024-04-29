@@ -22,7 +22,7 @@ type User struct {
 var RedisClient *redis.Client
 
 func main() {
-    clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
+    clientOptions := options.Client().ApplyURI("mongodb://172.19.0.2:27017")
 
     // Connect to MongoDB
     client, err := mongo.Connect(context.Background(), clientOptions)
